@@ -7,25 +7,30 @@
 # Jan Horzinka <jan.horzinka@centrum.cz>, 2022
 # Chris, 2022
 # Damian Brencic <brencicdamian12313@gmail.com>, 2022
-# rastislav Brencic <rastislav.brencic99@gmail.com>, 2022
+# Rastislav Brencic <rastislav.brencic99@gmail.com>, 2022
 # Jaroslav Helemik Nemec <nemec@helemik.cz>, 2022
 # Rastislav Brencic <rastislav.brencic@azet.sk>, 2022
 # Michal Veselý <michal@veselyberanek.net>, 2022
 # Martin Trigaux, 2022
 # SlavekB <slavek.banko@axis.cz>, 2023
-# Jiří Podhorecký, 2023
 # karolína schusterová <karolina.schusterova@vdp.sk>, 2023
 # Jakub Smolka, 2023
 # Tomáš Píšek, 2023
-# Aleš Fiala <f.ales1@seznam.cz>, 2023
+# Vojtech Smolka, 2024
+# Katerina Horylova, 2024
+# Aleš Fiala <f.ales1@seznam.cz>, 2024
+# Wil Odoo, 2024
+# Jiří Podhorecký <jirka.p@volny.cz>, 2024
+# Tereza Mokrá, 2024
+# Marta Wacławek, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-02 10:35+0000\n"
+"POT-Creation-Date: 2025-05-08 20:35+0000\n"
 "PO-Revision-Date: 2022-09-22 05:55+0000\n"
-"Last-Translator: Aleš Fiala <f.ales1@seznam.cz>, 2023\n"
+"Last-Translator: Marta Wacławek, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/odoo/teams/41243/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -108,7 +113,7 @@ msgstr "Před %s dny"
 #: code:addons/web/static/src/views/fields/formatters.js:0
 #, python-format
 msgid "%s records"
-msgstr ""
+msgstr "%s  záznamy"
 
 #. module: web
 #. odoo-javascript
@@ -122,7 +127,7 @@ msgstr "'%s' není platné datum"
 #: code:addons/web/static/src/core/l10n/dates.js:0
 #, python-format
 msgid "'%s' is not a correct date or datetime"
-msgstr ""
+msgstr "'%s' není platné datum/čas"
 
 #. module: web
 #. odoo-javascript
@@ -178,7 +183,7 @@ msgstr "'%s' není synchronizován s '%s'."
 #: code:addons/web/static/src/core/file_upload/file_upload_progress_record.js:0
 #, python-format
 msgid "(%s/%sMB)"
-msgstr ""
+msgstr "(%s/%sMB)"
 
 #. module: web
 #. odoo-javascript
@@ -213,7 +218,7 @@ msgstr "(vytvořit)"
 #: code:addons/web/static/src/webclient/burger_menu/mobile_switch_company_menu/mobile_switch_company_menu.xml:0
 #, python-format
 msgid "(current)"
-msgstr ""
+msgstr "(aktuální)"
 
 #. module: web
 #. odoo-javascript
@@ -248,13 +253,17 @@ msgid ""
 "                        font-style: normal;\n"
 "                    }"
 msgstr ""
+") format(\"woff\");\n"
+"                        font-weight: normal;\n"
+"                        font-style: normal;\n"
+"                    }"
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/webclient/user_menu/user_menu_items.xml:0
 #, python-format
 msgid "+ KEY"
-msgstr ""
+msgstr "+ KLÍČ"
 
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.report_invoice_wizard_preview
@@ -277,7 +286,7 @@ msgstr "1 záznam"
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.report_invoice_wizard_preview
 msgid "<span class=\"text-nowrap\">$ 2,887.50</span>"
-msgstr ""
+msgstr "<span class=\"text-nowrap\">$ 2,887.50</span>"
 
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.report_invoice_wizard_preview
@@ -285,6 +294,8 @@ msgid ""
 "<span class=\"text-nowrap\">$ <span class=\"oe_currency_value\">\n"
 "                                                       22,137.50</span></span>"
 msgstr ""
+"<span class=\"text-nowrap\">$ <span class=\"oe_currency_value\">\n"
+"                                                       22,137.50</span></span>"
 
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.report_invoice_wizard_preview
@@ -323,18 +334,20 @@ msgstr "<span class=\"text-nowrap\">Daň 15%</span>"
 #: model_terms:ir.ui.view,arch_db:web.report_invoice_wizard_preview
 msgid ""
 "<span class=\"w-100 o_force_ltr\" itemprop=\"streetAddress\">77 Santa Barbara\n"
-"                                               Rd<br/>Pleasant Hill CA 94523<br/>United States</span>"
+"                                       Rd<br/>Pleasant Hill CA 94523<br/>United States</span>"
 msgstr ""
+"<span class=\"w-100 o_force_ltr\" itemprop=\"streetAddress\">77 Santa Barbara\n"
+"                                       Rd<br/>Pleasant Hill CA 94523<br/>United States</span>"
 
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.report_invoice_wizard_preview
 msgid "<span id=\"line_tax_ids\">Tax 15%</span>"
-msgstr ""
+msgstr "<span id=\"line_tax_ids\">Daň 15%</span>"
 
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.report_invoice_wizard_preview
 msgid "<span itemprop=\"name\">Deco Addict</span>"
-msgstr ""
+msgstr "<span itemprop=\"name\">Deco Addict</span>"
 
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.report_invoice_wizard_preview
@@ -362,6 +375,8 @@ msgid ""
 "<span>Invoice</span>\n"
 "                           <span>INV/2023/00003</span>"
 msgstr ""
+"<span>Faktura</span>\n"
+"                           <span>INV/2023/00003</span>"
 
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.report_invoice_wizard_preview
@@ -389,6 +404,8 @@ msgid ""
 "<span>[FURN_8220] Four Person Desk<br/>\n"
 "                                       Four person modern office workstation</span>"
 msgstr ""
+"<span>[FURN_8220] Stůl pro čtyři osoby<br/>\n"
+"                                       Moderní místo práce pro čtyři osoby</span>"
 
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.report_invoice_wizard_preview
@@ -396,6 +413,8 @@ msgid ""
 "<span>[FURN_8999] Three-Seat Sofa<br/>\n"
 "                                       Three Seater Sofa with Lounger in Steel Grey Colour</span>"
 msgstr ""
+"<span>[FURN_8999] Třímístná pohovka<br/>\n"
+"                                       Třímístová pohovka s lehátkem v ocelově šedé barvě</span>"
 
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.report_invoice_wizard_preview
@@ -415,21 +434,21 @@ msgstr "<strong>Celkem</strong>"
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.report_invoice_wizard_preview
 msgid "<strong>Untaxed Amount</strong>"
-msgstr ""
+msgstr "<strong>Nezdaňovaná částka</strong>"
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/core/domain_selector/domain_selector_operators.js:0
 #, python-format
 msgid "=ilike"
-msgstr ""
+msgstr "=ilike"
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/core/domain_selector/domain_selector_operators.js:0
 #, python-format
 msgid "=like"
-msgstr ""
+msgstr "=like"
 
 #. module: web
 #. odoo-javascript
@@ -440,13 +459,16 @@ msgid ""
 "                        font-family: \"font\";\n"
 "                        src: url(data:font/ttf;base64,"
 msgstr ""
+"@font-face {\n"
+"                        font-family: \"font\";\n"
+"                        src: url(data:font/ttf;base64,"
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/search/favorite_menu/custom_favorite_item.js:0
 #, python-format
 msgid "A filter with same name already exists."
-msgstr ""
+msgstr "Filtr se stejným názvem již existuje."
 
 #. module: web
 #. odoo-javascript
@@ -507,7 +529,7 @@ msgstr "Přístup ke všem podnikovým aplikacím"
 #: code:addons/web/static/src/views/fields/ace/ace_field.js:0
 #, python-format
 msgid "Ace Editor"
-msgstr ""
+msgstr "Editor ace"
 
 #. module: web
 #. odoo-javascript
@@ -547,7 +569,6 @@ msgstr "Aktivovat debugging testovacích assetů"
 
 #. module: web
 #. odoo-javascript
-#: code:addons/web/static/src/core/debug/debug_providers.js:0
 #: code:addons/web/static/src/core/debug/debug_providers.js:0
 #, python-format
 msgid "Activate debug mode (with assets)"
@@ -605,14 +626,14 @@ msgstr "Přidat vlastní skupinu"
 #: code:addons/web/static/src/views/fields/properties/properties_field.xml:0
 #, python-format
 msgid "Add a Property"
-msgstr ""
+msgstr "Přidat vlastnost"
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/views/fields/properties/property_definition_selection.xml:0
 #, python-format
 msgid "Add a Value"
-msgstr ""
+msgstr "Přidat hodnotu"
 
 #. module: web
 #. odoo-javascript
@@ -715,7 +736,7 @@ msgstr "Přidat "
 #: code:addons/web/static/src/views/fields/x2many/x2many_field.js:0
 #, python-format
 msgid "Add: %s"
-msgstr ""
+msgstr "Přidat: %s"
 
 #. module: web
 #. odoo-javascript
@@ -730,7 +751,7 @@ msgstr ""
 #: code:addons/web/static/src/legacy/js/views/signature_dialog.js:0
 #, python-format
 msgid "Adopt & Sign"
-msgstr ""
+msgstr "Adaptovat a podepsat"
 
 #. module: web
 #. odoo-javascript
@@ -790,7 +811,7 @@ msgstr "Mezi"
 #: code:addons/web/static/src/core/file_upload/file_upload_service.js:0
 #, python-format
 msgid "An error occured while uploading."
-msgstr ""
+msgstr "Během nahrávání došlo k chybě."
 
 #. module: web
 #. odoo-javascript
@@ -913,7 +934,7 @@ msgstr "Opravdu chcete tyto záznamy smazat?"
 #: code:addons/web/static/src/views/kanban/kanban_renderer.js:0
 #, python-format
 msgid "Are you sure you want to delete this column?"
-msgstr ""
+msgstr "Opravdu chcete smazat tento sloupec?"
 
 #. module: web
 #. odoo-javascript
@@ -923,6 +944,8 @@ msgid ""
 "Are you sure you want to delete this property field? It will be removed for "
 "everyone using the \"%s\" %s."
 msgstr ""
+"Opravdu chcete toto pole vlastnosti smazat? Bude odstraněno pro všechny "
+"používající \"%s\" %s."
 
 #. module: web
 #. odoo-javascript
@@ -962,6 +985,7 @@ msgstr ""
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #: code:addons/web/static/src/views/graph/graph_controller.xml:0
+#: code:addons/web/static/src/views/graph/graph_controller.xml:0
 #, python-format
 msgid "Ascending"
 msgstr "Vzestupně"
@@ -970,6 +994,7 @@ msgstr "Vzestupně"
 #. odoo-javascript
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #: code:addons/web/static/src/legacy/xml/base.xml:0
+#: code:addons/web/static/src/views/fields/many2many_binary/many2many_binary_field.xml:0
 #: code:addons/web/static/src/views/fields/many2many_binary/many2many_binary_field.xml:0
 #, python-format
 msgid "Attach"
@@ -988,7 +1013,7 @@ msgstr "Příloha"
 #: code:addons/web/static/src/views/fields/attachment_image/attachment_image_field.js:0
 #, python-format
 msgid "Attachment Image"
-msgstr ""
+msgstr "Obraz přílohy"
 
 #. module: web
 #. odoo-javascript
@@ -1044,6 +1069,7 @@ msgstr "Odznaky"
 #. odoo-javascript
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #: code:addons/web/static/src/legacy/xml/base.xml:0
+#: code:addons/web/static/src/views/graph/graph_controller.xml:0
 #: code:addons/web/static/src/views/graph/graph_controller.xml:0
 #, python-format
 msgid "Bar Chart"
@@ -1127,7 +1153,7 @@ msgstr ""
 #: code:addons/web/static/src/views/fields/formatters.js:0
 #, python-format
 msgid "Bytes"
-msgstr ""
+msgstr "Bajtů"
 
 #. module: web
 #. odoo-javascript
@@ -1148,14 +1174,14 @@ msgstr "VYMAZAT"
 #: code:addons/web/static/src/core/commands/command_palette.xml:0
 #, python-format
 msgid "CMD"
-msgstr ""
+msgstr "CMD"
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/core/commands/command_palette.xml:0
 #, python-format
 msgid "CTRL"
-msgstr ""
+msgstr "CTRL"
 
 #. module: web
 #. odoo-javascript
@@ -1271,7 +1297,10 @@ msgstr "Zvolte debug příkat..."
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #: code:addons/web/static/src/views/fields/binary/binary_field.xml:0
+#: code:addons/web/static/src/views/fields/binary/binary_field.xml:0
 #: code:addons/web/static/src/views/fields/image/image_field.xml:0
+#: code:addons/web/static/src/views/fields/image/image_field.xml:0
+#: code:addons/web/static/src/views/fields/pdf_viewer/pdf_viewer_field.xml:0
 #: code:addons/web/static/src/views/fields/pdf_viewer/pdf_viewer_field.xml:0
 #: code:addons/web/static/src/views/view_dialogs/select_create_dialog.xml:0
 #, python-format
@@ -1318,7 +1347,7 @@ msgstr "Zavřít"
 #: code:addons/web/static/src/webclient/burger_menu/burger_menu.xml:0
 #, python-format
 msgid "Close menu"
-msgstr ""
+msgstr "Zavřít menu"
 
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.view_base_document_layout
@@ -1479,14 +1508,14 @@ msgstr ""
 #: code:addons/web/static/src/views/fields/copy_clipboard/copy_clipboard_field.js:0
 #, python-format
 msgid "Copy Text to Clipboard"
-msgstr ""
+msgstr "Kopírovat text do schránky"
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/views/fields/copy_clipboard/copy_clipboard_field.js:0
 #, python-format
 msgid "Copy URL to Clipboard"
-msgstr ""
+msgstr "Kopírovat URL do schránky"
 
 #. module: web
 #. odoo-javascript
@@ -1520,6 +1549,13 @@ msgstr "Copyright © 2004"
 
 #. module: web
 #. odoo-javascript
+#: code:addons/web/static/src/views/form/form_status_indicator/form_status_indicator.xml:0
+#, python-format
+msgid "Correct issues to save, or discard changes"
+msgstr ""
+
+#. module: web
+#. odoo-javascript
 #: code:addons/web/static/src/legacy/js/core/ajax.js:0
 #, python-format
 msgid "Could not connect to the server"
@@ -1529,7 +1565,6 @@ msgstr "Nelze se připojit k serveru"
 #. odoo-javascript
 #: code:addons/web/static/src/legacy/js/fields/basic_fields.js:0
 #: code:addons/web/static/src/legacy/js/fields/signature.js:0
-#: code:addons/web/static/src/views/fields/image/image_field.js:0
 #: code:addons/web/static/src/views/fields/signature/signature_field.js:0
 #, python-format
 msgid "Could not display the selected image"
@@ -1540,12 +1575,11 @@ msgstr "Vybraný obrázek se nepodařilo zobrazit"
 #: code:addons/web/static/src/views/fields/pdf_viewer/pdf_viewer_field.js:0
 #, python-format
 msgid "Could not display the selected pdf"
-msgstr ""
+msgstr "Vybraný soubor pdf nelze zobrazit"
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/legacy/js/fields/basic_fields.js:0
-#: code:addons/web/static/src/views/fields/image_url/image_url_field.js:0
 #, python-format
 msgid "Could not display the specified image url."
 msgstr "Zadanou adresu URL obrázku nelze zobrazit."
@@ -1565,7 +1599,7 @@ msgstr "Nemohu serializovat XML"
 msgid ""
 "Could not set the cover image: incorrect field (\"%s\") is provided in the "
 "view."
-msgstr ""
+msgstr "Nelze nastavit úvodní obrázek: v zobrazení je nesprávné pole („%s“)."
 
 #. module: web
 #. odoo-javascript
@@ -1618,7 +1652,7 @@ msgstr "Vytvořit"
 #: code:addons/web/static/src/views/fields/relational_utils.js:0
 #, python-format
 msgid "Create \"%s\""
-msgstr ""
+msgstr "Vytvořit \"%s\""
 
 #. module: web
 #. odoo-javascript
@@ -1633,14 +1667,14 @@ msgstr "Vytvořit \"<strong>%s</strong>\""
 #: code:addons/web/static/src/views/fields/relational_utils.js:0
 #, python-format
 msgid "Create %s"
-msgstr ""
+msgstr "Vytvořit %s"
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/views/fields/many2one/many2one_field.js:0
 #, python-format
 msgid "Create <strong>%s</strong> as a new %s?"
-msgstr ""
+msgstr "Vytvořit <strong>%s</strong> jako nový %s?"
 
 #. module: web
 #. odoo-javascript
@@ -1654,7 +1688,7 @@ msgstr "Vytvořit a upravit..."
 #: code:addons/web/static/src/views/fields/relational_utils.js:0
 #, python-format
 msgid "Create and edit..."
-msgstr ""
+msgstr "Vytvořit a upravit..."
 
 #. module: web
 #. odoo-javascript
@@ -1700,6 +1734,7 @@ msgstr "Vytvořil:"
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/views/graph/graph_controller.xml:0
+#: code:addons/web/static/src/views/graph/graph_controller.xml:0
 #, python-format
 msgid "Cumulative"
 msgstr "Kumulativní"
@@ -1707,7 +1742,6 @@ msgstr "Kumulativní"
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/legacy/xml/base.xml:0
-#: code:addons/web/static/src/views/fields/statusbar/statusbar_field.xml:0
 #, python-format
 msgid "Current state"
 msgstr "Aktuální stav"
@@ -1810,7 +1844,7 @@ msgstr "Výchozí"
 #: code:addons/web/static/src/views/fields/properties/property_definition.xml:0
 #, python-format
 msgid "Default State"
-msgstr ""
+msgstr "Výchozí stav"
 
 #. module: web
 #. odoo-javascript
@@ -1876,7 +1910,7 @@ msgstr "Smazat"
 #: code:addons/web/static/src/views/fields/properties/properties_field.js:0
 #, python-format
 msgid "Delete Property Field"
-msgstr ""
+msgstr "Smazat pole vlastnosti"
 
 #. module: web
 #. odoo-javascript
@@ -1901,7 +1935,7 @@ msgstr "Smazat uzel"
 #: code:addons/web/static/src/views/list/list_renderer.xml:0
 #, python-format
 msgid "Delete row"
-msgstr ""
+msgstr "Smazat řádek"
 
 #. module: web
 #. odoo-javascript
@@ -1914,6 +1948,7 @@ msgstr "Smazat řádek"
 #. odoo-javascript
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #: code:addons/web/static/src/legacy/xml/base.xml:0
+#: code:addons/web/static/src/views/graph/graph_controller.xml:0
 #: code:addons/web/static/src/views/graph/graph_controller.xml:0
 #, python-format
 msgid "Descending"
@@ -1931,7 +1966,7 @@ msgstr "Vývojářské nástroje"
 #: code:addons/web/static/src/views/list/list_renderer.js:0
 #, python-format
 msgid "Different currencies cannot be aggregated"
-msgstr ""
+msgstr "Různé měny nelze agregovat"
 
 #. module: web
 #. odoo-javascript
@@ -1959,9 +1994,10 @@ msgstr "Zrušit"
 #. odoo-javascript
 #: code:addons/web/static/src/views/form/form_error_dialog/form_error_dialog.xml:0
 #: code:addons/web/static/src/views/form/form_status_indicator/form_status_indicator.xml:0
+#: code:addons/web/static/src/views/form/form_status_indicator/form_status_indicator.xml:0
 #, python-format
 msgid "Discard changes"
-msgstr ""
+msgstr "Neukládat změny a pokračovat"
 
 #. module: web
 #. odoo-javascript
@@ -1981,7 +2017,7 @@ msgstr "Zobrazované jméno"
 #: code:addons/web/static/src/core/file_upload/file_upload_progress_bar.js:0
 #, python-format
 msgid "Do you really want to cancel the upload of %s?"
-msgstr ""
+msgstr "Opravdu chcete stornovat nahrávání %s?"
 
 #. module: web
 #. odoo-javascript
@@ -2024,7 +2060,7 @@ msgstr "Doména"
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #, python-format
 msgid "Domain node"
-msgstr ""
+msgstr "Uzel domény"
 
 #. module: web
 #. odoo-javascript
@@ -2053,7 +2089,7 @@ msgstr "Doména:"
 #: code:addons/web/static/src/core/ui/block_ui.js:0
 #, python-format
 msgid "Don't leave yet,"
-msgstr ""
+msgstr "Ještě neodcházejte,"
 
 #. module: web
 #. odoo-javascript
@@ -2065,6 +2101,7 @@ msgstr "Ještě neodcházejte,<br />stále probíhá načítání..."
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/legacy/xml/base.xml:0
+#: code:addons/web/static/src/views/fields/binary/binary_field.xml:0
 #: code:addons/web/static/src/views/fields/binary/binary_field.xml:0
 #: code:addons/web/static/src/views/fields/many2many_binary/many2many_binary_field.xml:0
 #, python-format
@@ -2080,6 +2117,7 @@ msgstr "Stáhnout náhled v PDF"
 #. odoo-javascript
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #: code:addons/web/static/src/legacy/xml/base.xml:0
+#: code:addons/web/static/src/views/pivot/pivot_controller.xml:0
 #: code:addons/web/static/src/views/pivot/pivot_controller.xml:0
 #, python-format
 msgid "Download xlsx"
@@ -2118,7 +2156,10 @@ msgstr "Duplikovat"
 #: code:addons/web/static/src/views/calendar/calendar_common/calendar_common_popover.xml:0
 #: code:addons/web/static/src/views/calendar/quick_create/calendar_quick_create.xml:0
 #: code:addons/web/static/src/views/fields/binary/binary_field.xml:0
+#: code:addons/web/static/src/views/fields/binary/binary_field.xml:0
 #: code:addons/web/static/src/views/fields/image/image_field.xml:0
+#: code:addons/web/static/src/views/fields/image/image_field.xml:0
+#: code:addons/web/static/src/views/fields/pdf_viewer/pdf_viewer_field.xml:0
 #: code:addons/web/static/src/views/fields/pdf_viewer/pdf_viewer_field.xml:0
 #: code:addons/web/static/src/views/kanban/kanban_record_quick_create.xml:0
 #, python-format
@@ -2181,7 +2222,7 @@ msgstr ""
 #: code:addons/web/static/src/views/kanban/kanban_renderer.js:0
 #, python-format
 msgid "Edit: %s"
-msgstr ""
+msgstr "Editovat\\: %s"
 
 #. module: web
 #. odoo-javascript
@@ -2198,7 +2239,7 @@ msgstr "E-mail "
 #: code:addons/web/static/src/webclient/settings_form_view/widgets/res_config_invite_users.js:0
 #, python-format
 msgid "Empty email address"
-msgstr ""
+msgstr "Prázdná emailová adresa"
 
 #. module: web
 #. odoo-javascript
@@ -2219,11 +2260,19 @@ msgstr "Vložte e-mailovou adresu"
 #: code:addons/web/static/src/webclient/settings_form_view/highlight_text/form_label_highlight_text.xml:0
 #, python-format
 msgid "Enterprise"
-msgstr ""
+msgstr "Podnik"
+
+#. module: web
+#. odoo-javascript
+#: code:addons/web/static/src/core/debug/profiling/profiling_item.xml:0
+#, python-format
+msgid "Entry Count"
+msgstr "Počet vstupů"
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/core/file_upload/file_upload_service.js:0
+#: code:addons/web/static/src/views/relational_model.js:0
 #, python-format
 msgid "Error"
 msgstr "Chyba"
@@ -2255,6 +2304,7 @@ msgstr "Všechno"
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #: code:addons/web/static/src/views/pivot/pivot_controller.xml:0
+#: code:addons/web/static/src/views/pivot/pivot_controller.xml:0
 #, python-format
 msgid "Expand all"
 msgstr "Rozbalit vše"
@@ -2273,6 +2323,7 @@ msgstr "Export"
 #. odoo-javascript
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #: code:addons/web/static/src/legacy/xml/base.xml:0
+#: code:addons/web/static/src/views/list/list_controller.xml:0
 #: code:addons/web/static/src/views/list/list_controller.xml:0
 #, python-format
 msgid "Export All"
@@ -2302,8 +2353,8 @@ msgid "Exporting grouped data to csv is not supported."
 msgstr "Export seskupených dat do formátu CSV není podporován."
 
 #. module: web
-#. odoo-python
 #. odoo-javascript
+#. odoo-python
 #: code:addons/web/controllers/export.py:0
 #: code:addons/web/controllers/export.py:0
 #: code:addons/web/static/src/legacy/js/widgets/data_export.js:0
@@ -2392,7 +2443,6 @@ msgstr "Soubor"
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/legacy/js/fields/basic_fields.js:0
-#: code:addons/web/static/src/views/fields/file_handler.js:0
 #, python-format
 msgid "File upload"
 msgstr "Nahrát soubor"
@@ -2415,6 +2465,7 @@ msgstr "Filtry"
 #. odoo-javascript
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #: code:addons/web/static/src/legacy/xml/base.xml:0
+#: code:addons/web/static/src/views/pivot/pivot_controller.xml:0
 #: code:addons/web/static/src/views/pivot/pivot_controller.xml:0
 #, python-format
 msgid "Flip axis"
@@ -2556,9 +2607,10 @@ msgstr "Získejte tuto funkci a mnohem více s Odoo Enterprise!"
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/views/fields/url/url_field.xml:0
+#: code:addons/web/static/src/views/fields/url/url_field.xml:0
 #, python-format
 msgid "Go to URL"
-msgstr ""
+msgstr "Přejít na URL"
 
 #. module: web
 #. odoo-javascript
@@ -2604,6 +2656,19 @@ msgstr "Text záhlaví zobrazený v horní části všech přehledů."
 
 #. module: web
 #. odoo-javascript
+#: code:addons/web/static/src/views/basic_relational_model.js:0
+#, python-format
+msgid ""
+"Heads up! Your recent changes are too large to save automatically. Please "
+"click the <i class=\"fa fa-cloud-upload fa-fw\"></i> button now to ensure "
+"your work is saved before you exit this tab."
+msgstr ""
+"Pozor! Vaše poslední změny jsou příliš velké na to, aby mohly být "
+"automaticky uloženy. Klikněte nyní na tlačítko <i class=\"fa fa-cloud-upload"
+" fa-fw\"></i>, aby se vaše práce uložila před opuštěním této karty."
+
+#. module: web
+#. odoo-javascript
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #, python-format
 msgid "Hide in Kanban"
@@ -2614,7 +2679,7 @@ msgstr "Skrýt v Kanbanu"
 #: code:addons/web/static/src/views/fields/many2many_tags/many2many_tags_field.xml:0
 #, python-format
 msgid "Hide in kanban"
-msgstr ""
+msgstr "Skrýt v Kanbanu"
 
 #. module: web
 #. odoo-javascript
@@ -2707,7 +2772,7 @@ msgstr "Obrázek"
 #: code:addons/web/static/src/views/fields/remaining_days/remaining_days_field.js:0
 #, python-format
 msgid "In %s days"
-msgstr ""
+msgstr "Za %s dní"
 
 #. module: web
 #. odoo-javascript
@@ -2721,10 +2786,12 @@ msgstr "Celé číslo"
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/views/fields/many2one/many2one_field.xml:0
+#: code:addons/web/static/src/views/fields/many2one/many2one_field.xml:0
+#: code:addons/web/static/src/views/fields/properties/property_value.xml:0
 #: code:addons/web/static/src/views/fields/properties/property_value.xml:0
 #, python-format
 msgid "Internal link"
-msgstr ""
+msgstr "Interní odkaz"
 
 #. module: web
 #. odoo-javascript
@@ -2768,7 +2835,7 @@ msgstr "Neplatná doména"
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #, python-format
 msgid "Invalid field chain"
-msgstr ""
+msgstr "Neplatný řetězec pole"
 
 #. module: web
 #. odoo-javascript
@@ -2800,14 +2867,14 @@ msgstr "Neplatná pole:"
 #: code:addons/web/static/src/views/relational_model.js:0
 #, python-format
 msgid "Invalid fields: "
-msgstr ""
+msgstr "Neplatná pole:"
 
 #. module: web
 #. odoo-python
 #: code:addons/web/controllers/domain.py:0
 #, python-format
 msgid "Invalid model: %s"
-msgstr ""
+msgstr "Neplatný model: %s"
 
 #. module: web
 #. odoo-javascript
@@ -2828,7 +2895,7 @@ msgstr "Pozvat nové uživatele"
 #: code:addons/web/static/src/webclient/settings_form_view/widgets/res_config_invite_users.js:0
 #, python-format
 msgid "Inviting..."
-msgstr ""
+msgstr "Pozvání..."
 
 #. module: web
 #: model:ir.model.fields,field_description:web.field_base_document_layout__is_company_details_empty
@@ -2865,7 +2932,7 @@ msgstr "Kanban"
 #: code:addons/web/static/src/views/kanban/kanban_column_examples_dialog.js:0
 #, python-format
 msgid "Kanban Examples"
-msgstr ""
+msgstr "Kanban příklady"
 
 #. module: web
 #. odoo-javascript
@@ -2881,7 +2948,7 @@ msgstr ""
 #: code:addons/web/static/src/views/fields/state_selection/state_selection_field.js:0
 #, python-format
 msgid "Label Selection"
-msgstr ""
+msgstr "Výběr štítků"
 
 #. module: web
 #. odoo-python
@@ -2951,6 +3018,7 @@ msgstr "Světle modrá"
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #: code:addons/web/static/src/views/graph/graph_controller.xml:0
+#: code:addons/web/static/src/views/graph/graph_controller.xml:0
 #, python-format
 msgid "Line Chart"
 msgstr "Čárový graf"
@@ -2977,6 +3045,13 @@ msgstr "Načíst"
 #, python-format
 msgid "Load demo data"
 msgstr "nahrát demo data"
+
+#. module: web
+#. odoo-javascript
+#: code:addons/web/static/src/views/graph/graph_controller.xml:0
+#, python-format
+msgid "Load everything anyway."
+msgstr ""
 
 #. module: web
 #. odoo-javascript
@@ -3388,6 +3463,7 @@ msgstr ""
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/core/pager/pager.xml:0
+#: code:addons/web/static/src/core/pager/pager.xml:0
 #: code:addons/web/static/src/views/calendar/calendar_controller.xml:0
 #: code:addons/web/static/src/views/calendar/calendar_controller.xml:0
 #, python-format
@@ -3519,7 +3595,7 @@ msgstr "Nenalezeny žádné záznamy!"
 #: code:addons/web/static/src/views/fields/properties/property_tags.js:0
 #, python-format
 msgid "No result"
-msgstr ""
+msgstr "Žádné výsledky"
 
 #. module: web
 #. odoo-javascript
@@ -3547,6 +3623,7 @@ msgstr ""
 
 #. module: web
 #. odoo-javascript
+#: code:addons/web/static/src/core/debug/profiling/profiling_item.xml:0
 #: code:addons/web/static/src/legacy/js/views/kanban/kanban_column.js:0
 #: code:addons/web/static/src/legacy/js/views/kanban/kanban_column.js:0
 #: code:addons/web/static/src/legacy/js/views/kanban/kanban_column.js:0
@@ -3573,7 +3650,6 @@ msgstr "Nenastaveno"
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/legacy/xml/base.xml:0
-#: code:addons/web/static/src/views/fields/statusbar/statusbar_field.xml:0
 #, python-format
 msgid "Not active state"
 msgstr "Stav není aktivní"
@@ -3581,7 +3657,6 @@ msgstr "Stav není aktivní"
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/legacy/xml/base.xml:0
-#: code:addons/web/static/src/views/fields/statusbar/statusbar_field.xml:0
 #, python-format
 msgid "Not active state, click to change it"
 msgstr "Není aktivní stav, klepnutím ho změňte"
@@ -3686,7 +3761,7 @@ msgstr ""
 #: code:addons/web/static/src/views/form/form_error_dialog/form_error_dialog.xml:0
 #, python-format
 msgid "Oh snap!"
-msgstr ""
+msgstr "Pozor!"
 
 #. module: web
 #. odoo-javascript
@@ -3755,6 +3830,8 @@ msgid ""
 "Only types %(supported_types)s are supported for category (found type "
 "%(field_type)s)"
 msgstr ""
+"Pouze typy %(supported_types)s jsou podporovány pro kategorii (nalezený typ "
+"%(field_type)s)"
 
 #. module: web
 #. odoo-python
@@ -3787,7 +3864,7 @@ msgstr "Otevřít zobrazení"
 #: code:addons/web/static/src/core/debug/debug_menu.xml:0
 #, python-format
 msgid "Open developer tools"
-msgstr ""
+msgstr "Otevřít vývojářské nástroje"
 
 #. module: web
 #. odoo-javascript
@@ -3812,21 +3889,21 @@ msgstr "Otevřít: "
 #: code:addons/web/static/src/views/fields/relational_utils.js:0
 #, python-format
 msgid "Open: %s"
-msgstr ""
+msgstr "Otevřít: %s"
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/views/fields/properties/property_definition_selection.xml:0
 #, python-format
 msgid "Option Name"
-msgstr ""
+msgstr "Název možnosti"
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/legacy/js/views/list/list_renderer.js:0
 #, python-format
 msgid "Optional columns"
-msgstr ""
+msgstr "Volitelné sloupce"
 
 #. module: web
 #. odoo-javascript
@@ -3893,7 +3970,7 @@ msgstr "Strana: <span class=\"page\"/> / <span class=\"topage\"/>"
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #, python-format
 msgid "Pager"
-msgstr ""
+msgstr "Pager"
 
 #. module: web
 #: model:ir.model.fields,field_description:web.field_base_document_layout__paperformat_id
@@ -3959,6 +4036,7 @@ msgstr "Zvolit barvu"
 #. odoo-javascript
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #: code:addons/web/static/src/legacy/xml/base.xml:0
+#: code:addons/web/static/src/views/graph/graph_controller.xml:0
 #: code:addons/web/static/src/views/graph/graph_controller.xml:0
 #, python-format
 msgid "Pie Chart"
@@ -4078,6 +4156,8 @@ msgid ""
 "Please use the following communication for your payment : <b><span>\n"
 "                           INV/2023/00003</span></b>"
 msgstr ""
+"Pro platbu použijte prosím následující komunikaci : <b><span>\n"
+"                           INV/2023/00003</span></b>"
 
 #. module: web
 #. odoo-javascript
@@ -4111,12 +4191,12 @@ msgstr "Náhled"
 #. module: web
 #: model:ir.actions.report,name:web.action_report_externalpreview
 msgid "Preview External Report"
-msgstr ""
+msgstr "Náhled externího výkazu"
 
 #. module: web
 #: model:ir.actions.report,name:web.action_report_internalpreview
 msgid "Preview Internal Report"
-msgstr ""
+msgstr "Náhled interního výkazu"
 
 #. module: web
 #: model:ir.model.fields,field_description:web.field_base_document_layout__preview_logo
@@ -4127,6 +4207,7 @@ msgstr "Náhled loga"
 #. odoo-javascript
 #: code:addons/web/static/src/core/model_field_selector/model_field_selector_popover.xml:0
 #: code:addons/web/static/src/core/model_field_selector/model_field_selector_popover.xml:0
+#: code:addons/web/static/src/core/pager/pager.xml:0
 #: code:addons/web/static/src/core/pager/pager.xml:0
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #: code:addons/web/static/src/legacy/xml/base.xml:0
@@ -4157,7 +4238,7 @@ msgstr "Minulý rok"
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #, python-format
 msgid "Previous menu"
-msgstr ""
+msgstr "Předchozí menu"
 
 #. module: web
 #. odoo-javascript
@@ -4187,7 +4268,7 @@ msgstr "Tisk"
 #: code:addons/web/static/src/legacy/js/components/action_menus.js:0
 #, python-format
 msgid "Printing options"
-msgstr ""
+msgstr "Možnosti tisku"
 
 #. module: web
 #. odoo-javascript
@@ -4225,14 +4306,14 @@ msgstr "Vlastnosti"
 #: code:addons/web/static/src/views/fields/properties/properties_field.js:0
 #, python-format
 msgid "Property %s"
-msgstr ""
+msgstr "Vlastnost %s"
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/views/fields/properties/property_definition.xml:0
 #, python-format
 msgid "Property Name"
-msgstr ""
+msgstr "Název vlastnosti"
 
 #. module: web
 #. odoo-javascript
@@ -4403,7 +4484,7 @@ msgstr "Regenerovat balíčky assetů"
 #: code:addons/web/static/src/legacy/js/widgets/model_field_selector_popover.js:0
 #, python-format
 msgid "Relation not allowed"
-msgstr ""
+msgstr "Vztah není povolen"
 
 #. module: web
 #. odoo-javascript
@@ -4428,7 +4509,7 @@ msgstr "Vztah:"
 #: code:addons/web/static/src/views/fields/x2many/x2many_field.js:0
 #, python-format
 msgid "Relational table"
-msgstr ""
+msgstr "Tabulka vztahů"
 
 #. module: web
 #. odoo-javascript
@@ -4466,7 +4547,7 @@ msgstr "Odstranit  úvodní obrázek"
 #: code:addons/web/static/src/views/fields/properties/property_definition_selection.xml:0
 #, python-format
 msgid "Remove Property"
-msgstr ""
+msgstr "Odebrat vlastnost"
 
 #. module: web
 #. odoo-javascript
@@ -4521,7 +4602,7 @@ msgstr "Rozložení sestavy"
 #. module: web
 #: model:ir.actions.report,name:web.action_report_layout_preview
 msgid "Report Layout Preview"
-msgstr ""
+msgstr "Náhled rozložení dokumentu"
 
 #. module: web
 #. odoo-javascript
@@ -4530,6 +4611,13 @@ msgstr ""
 #, python-format
 msgid "Request timeout"
 msgstr "Zažádat o timeout"
+
+#. module: web
+#. odoo-javascript
+#: code:addons/web/static/src/core/domain_selector/domain_selector.xml:0
+#, python-format
+msgid "Reset domain"
+msgstr ""
 
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.view_base_document_layout
@@ -4642,7 +4730,7 @@ msgstr "Uložit jako :"
 #: code:addons/web/static/src/views/view_dialogs/export_data_dialog.xml:0
 #, python-format
 msgid "Save as:"
-msgstr ""
+msgstr "Uložit jako:"
 
 #. module: web
 #. odoo-javascript
@@ -4661,9 +4749,10 @@ msgstr "Uložit výchozí"
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/views/form/form_status_indicator/form_status_indicator.xml:0
+#: code:addons/web/static/src/views/form/form_status_indicator/form_status_indicator.xml:0
 #, python-format
 msgid "Save manually"
-msgstr ""
+msgstr "Uložit ručně"
 
 #. module: web
 #. odoo-javascript
@@ -4675,6 +4764,7 @@ msgstr "Uložit záznam"
 
 #. module: web
 #. odoo-javascript
+#: code:addons/web/static/src/views/fields/many2one/many2one_field.xml:0
 #: code:addons/web/static/src/views/fields/many2one/many2one_field.xml:0
 #: code:addons/web/static/src/views/fields/many2one/many2one_field.xml:0
 #, python-format
@@ -4708,35 +4798,35 @@ msgstr "Vyhledat více..."
 #: code:addons/web/static/src/core/model_selector/model_selector.js:0
 #, python-format
 msgid "Search a Model..."
-msgstr ""
+msgstr "Vyhledat model..."
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #, python-format
 msgid "Search a field..."
-msgstr ""
+msgstr "Vyhledat pole..."
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/core/commands/default_providers.js:0
 #, python-format
 msgid "Search for a command..."
-msgstr ""
+msgstr "Hledat příkaz..."
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/webclient/menus/menu_providers.js:0
 #, python-format
 msgid "Search for a menu..."
-msgstr ""
+msgstr "Hledat menu..."
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #, python-format
 msgid "Search for records"
-msgstr ""
+msgstr "Hledat záznamy"
 
 #. module: web
 #. odoo-javascript
@@ -4814,7 +4904,7 @@ msgstr ""
 #: code:addons/web/static/src/views/fields/properties/property_definition_selection.xml:0
 #, python-format
 msgid "Select Default"
-msgstr ""
+msgstr "Vybrat výchozí"
 
 #. module: web
 #. odoo-javascript
@@ -4848,6 +4938,13 @@ msgstr "Vybrat vše"
 
 #. module: web
 #. odoo-javascript
+#: code:addons/web/static/src/views/list/list_controller.xml:0
+#, python-format
+msgid "Select all records matching the search"
+msgstr ""
+
+#. module: web
+#. odoo-javascript
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #: code:addons/web/static/src/views/view_dialogs/export_data_dialog.xml:0
 #, python-format
@@ -4859,7 +4956,7 @@ msgstr "Vyberte pole"
 #: code:addons/web/static/src/views/fields/relational_utils.js:0
 #, python-format
 msgid "Select records"
-msgstr ""
+msgstr "Vybrat záznamy"
 
 #. module: web
 #. odoo-javascript
@@ -4890,6 +4987,7 @@ msgstr "Výběr:"
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/views/fields/email/email_field.xml:0
+#: code:addons/web/static/src/views/fields/email/email_field.xml:0
 #, python-format
 msgid "Send Email"
 msgstr "Odeslat e-mail"
@@ -4916,14 +5014,14 @@ msgstr "Nastavit úvodní obrázek"
 #: code:addons/web/static/src/legacy/js/fields/basic_fields.js:0
 #, python-format
 msgid "Set a kanban state..."
-msgstr ""
+msgstr "Nastavit stav kanban..."
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/legacy/js/fields/basic_fields.js:0
 #, python-format
 msgid "Set a priority..."
-msgstr ""
+msgstr "Nastavit prioritu..."
 
 #. module: web
 #. odoo-javascript
@@ -4939,7 +5037,7 @@ msgstr "Nastavte na svém uživateli časové pásmo"
 #: code:addons/web/static/src/views/fields/state_selection/state_selection_field.js:0
 #, python-format
 msgid "Set kanban state..."
-msgstr ""
+msgstr "Nastavit stav kanban..."
 
 #. module: web
 #. odoo-javascript
@@ -4947,7 +5045,7 @@ msgstr ""
 #: code:addons/web/static/src/views/fields/priority/priority_field.js:0
 #, python-format
 msgid "Set priority..."
-msgstr ""
+msgstr "Nastavit prioritu..."
 
 #. module: web
 #. odoo-javascript
@@ -4982,7 +5080,7 @@ msgstr "Klávesové zkratky"
 #: code:addons/web/static/src/views/view_dialogs/export_data_dialog.xml:0
 #, python-format
 msgid "Show sub-fields"
-msgstr ""
+msgstr "Zobrazit podřízená pole"
 
 #. module: web
 #. odoo-javascript
@@ -5043,6 +5141,8 @@ msgstr "Speciální:"
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #: code:addons/web/static/src/views/graph/graph_controller.xml:0
 #: code:addons/web/static/src/views/graph/graph_controller.xml:0
+#: code:addons/web/static/src/views/graph/graph_controller.xml:0
+#: code:addons/web/static/src/views/graph/graph_controller.xml:0
 #, python-format
 msgid "Stacked"
 msgstr "Skládaný"
@@ -5072,17 +5172,24 @@ msgstr "Stav"
 
 #. module: web
 #. odoo-javascript
+#: code:addons/web/static/src/views/fields/statusbar/statusbar_field.xml:0
+#, python-format
+msgid "Statusbar"
+msgstr ""
+
+#. module: web
+#. odoo-javascript
 #: code:addons/web/static/src/webclient/settings_form_view/settings_confirmation_dialog.xml:0
 #, python-format
 msgid "Stay Here"
-msgstr ""
+msgstr "Vrátit se zpět k úpravám"
 
 #. module: web
 #. odoo-javascript
 #: code:addons/web/static/src/views/form/form_error_dialog/form_error_dialog.xml:0
 #, python-format
 msgid "Stay here"
-msgstr ""
+msgstr "Vrátit se zpět k úpravám"
 
 #. module: web
 #. odoo-javascript
@@ -5138,10 +5245,11 @@ msgstr "Chyba syntaxe"
 
 #. module: web
 #. odoo-javascript
+#: code:addons/web/static/src/core/commands/command_items.xml:0
 #: code:addons/web/static/src/webclient/user_menu/user_menu_items.xml:0
 #, python-format
 msgid "TIP"
-msgstr ""
+msgstr "TIP"
 
 #. module: web
 #. odoo-javascript
@@ -5207,6 +5315,8 @@ msgid ""
 "The content of this cell is too long for an XLSX file (more than %s "
 "characters). Please use the CSV format for this export."
 msgstr ""
+"Obsah této buňky je pro soubor XLSX příliš dlouhý (více než %s znaků). Pro "
+"tento export použijte prosím formát CSV."
 
 #. module: web
 #. odoo-javascript
@@ -5229,8 +5339,14 @@ msgstr ""
 
 #. module: web
 #. odoo-javascript
+#: code:addons/web/static/src/core/utils/files.js:0
+#, python-format
+msgid "The selected file (%sB) is over the maximum allowed file size (%sB)."
+msgstr ""
+
+#. module: web
+#. odoo-javascript
 #: code:addons/web/static/src/legacy/js/fields/basic_fields.js:0
-#: code:addons/web/static/src/views/fields/file_handler.js:0
 #, python-format
 msgid "The selected file exceed the maximum file size of %s."
 msgstr "Zvolený soubor překračuje maximální velikost %s."
@@ -5245,6 +5361,15 @@ msgid ""
 msgstr "Typ pole '%s' musí být many2many s relací k modelu 'ir.attachment'."
 
 #. module: web
+#. odoo-javascript
+#: code:addons/web/static/src/views/graph/graph_controller.xml:0
+#, python-format
+msgid ""
+"There are too many data. The graph only shows a sample. Use the filters to "
+"refine the scope."
+msgstr ""
+
+#. module: web
 #. odoo-python
 #: code:addons/web/controllers/export.py:0
 #, python-format
@@ -5252,6 +5377,8 @@ msgid ""
 "There are too many rows (%s rows, limit: %s) to export as Excel 2007-2013 "
 "(.xlsx) format. Consider splitting the export."
 msgstr ""
+"Je příliš mnoho řádků (%s řádků, limit: %s) pro export do formátu Excel "
+"2007-2013 (.xlsx). Zvažte rozdělení exportu."
 
 #. module: web
 #. odoo-javascript
@@ -5273,7 +5400,7 @@ msgstr "Při nahrávání vašeho souboru nastal problém"
 #: code:addons/web/static/src/views/fields/file_handler.js:0
 #, python-format
 msgid "There was a problem while uploading your file."
-msgstr ""
+msgstr "Při nahrávání vašeho souboru nastal problém."
 
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.neutralize_banner
@@ -5289,6 +5416,7 @@ msgstr "Toto datum je v budoucnosti. Ujistěte se, že to je to, co očekáváte
 
 #. module: web
 #. odoo-javascript
+#: code:addons/web/static/src/core/datepicker/datepicker.xml:0
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #, python-format
 msgid "This date is on the future. Make sure it is what you expected."
@@ -5446,7 +5574,7 @@ msgstr "Celkem"
 #: code:addons/web/static/src/views/fields/translation_dialog.js:0
 #, python-format
 msgid "Translate: %s"
-msgstr ""
+msgstr "Přeložit: %s"
 
 #. module: web
 #. odoo-javascript
@@ -5463,6 +5591,8 @@ msgid ""
 "Try to add some records, or make sure that there is no\n"
 "                    active filter in the search bar."
 msgstr ""
+"Zkuste přidat nějaké záznamy, nebo se ujistěte, že není žádný\n"
+"                    aktivní filtr ve vyhledávací liště."
 
 #. module: web
 #. odoo-javascript
@@ -5557,8 +5687,8 @@ msgid "Uncaught Promise"
 msgstr ""
 
 #. module: web
-#. odoo-python
 #. odoo-javascript
+#. odoo-python
 #: code:addons/web/controllers/export.py:0
 #: code:addons/web/static/src/views/calendar/calendar_model.js:0
 #: code:addons/web/static/src/views/graph/graph_model.js:0
@@ -5666,7 +5796,7 @@ msgstr "Upgrade na budoucí verze"
 #: code:addons/web/static/src/views/kanban/kanban_cover_image_dialog.xml:0
 #, python-format
 msgid "Upload and Set"
-msgstr ""
+msgstr "Nahrát a nastavit"
 
 #. module: web
 #. odoo-javascript
@@ -5726,7 +5856,7 @@ msgstr "Nahrávání..."
 #: code:addons/web/static/src/core/file_upload/file_upload_progress_record.js:0
 #, python-format
 msgid "Uploading... (%s%)"
-msgstr ""
+msgstr "Nahrávání... (%s%)"
 
 #. module: web
 #. odoo-javascript
@@ -5734,7 +5864,7 @@ msgstr ""
 #: code:addons/web/static/src/views/kanban/kanban_column_quick_create.js:0
 #, python-format
 msgid "Use This For My Kanban"
-msgstr ""
+msgstr "Použijte to pro můj kanban"
 
 #. module: web
 #. odoo-javascript
@@ -5755,7 +5885,7 @@ msgstr "Uživatel"
 #: code:addons/web/static/src/core/errors/error_dialogs.js:0
 #, python-format
 msgid "User Error"
-msgstr ""
+msgstr "Chyba uživatele"
 
 #. module: web
 #. odoo-javascript
@@ -5812,7 +5942,7 @@ msgstr "Pole zobrazení"
 #: code:addons/web/static/src/views/fields/properties/property_definition.xml:0
 #, python-format
 msgid "View In Kanban"
-msgstr ""
+msgstr "Zobrazit v kanbanu"
 
 #. module: web
 #. odoo-javascript
@@ -5841,7 +5971,7 @@ msgstr "Typ zobrazení"
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #, python-format
 msgid "View switcher"
-msgstr ""
+msgstr "Zobrazit přepínač"
 
 #. module: web
 #. odoo-javascript
@@ -5850,6 +5980,7 @@ msgstr ""
 #: code:addons/web/static/src/legacy/js/views/list/list_controller.js:0
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #: code:addons/web/static/src/legacy/xml/base.xml:0
+#: code:addons/web/static/src/legacy/xml/control_panel.xml:0
 #: code:addons/web/static/src/search/favorite_menu/favorite_menu.js:0
 #: code:addons/web/static/src/views/fields/domain/domain_field.xml:0
 #: code:addons/web/static/src/views/fields/domain/domain_field.xml:0
@@ -5873,7 +6004,7 @@ msgstr "Testy webu pro mobilní zařízení"
 #. module: web
 #: model_terms:ir.ui.view,arch_db:web.qunit_suite
 msgid "Web Tests"
-msgstr ""
+msgstr "Webové testy"
 
 #. module: web
 #: model:ir.model.fields,field_description:web.field_base_document_layout__website
@@ -5993,7 +6124,7 @@ msgstr ""
 #: code:addons/web/controllers/binary.py:0
 #, python-format
 msgid "You are not allowed to upload an attachment here."
-msgstr ""
+msgstr "Nemáte povolení nahrát tady přílohu."
 
 #. module: web
 #. odoo-javascript
@@ -6030,6 +6161,8 @@ msgstr "Možná tomu nebudete věřit<br />ale aplikace se stále načítá..."
 #, python-format
 msgid "You need to be able to edit parent first to add property tags"
 msgstr ""
+"Chcete-li přidat značky vlastností, musíte být schopni upravit nadřazenou "
+"položku"
 
 #. module: web
 #. odoo-javascript
@@ -6038,6 +6171,8 @@ msgstr ""
 #, python-format
 msgid "You need to be able to edit parent first to configure property fields"
 msgstr ""
+"Chcete-li nakonfigurovat pole vlastností, musíte být schopni nejprve upravit"
+" nadřazený objekt"
 
 #. module: web
 #. odoo-javascript
@@ -6097,7 +6232,7 @@ msgstr ""
 #: code:addons/web/static/src/legacy/js/views/kanban/kanban_record.js:0
 #, python-format
 msgid "[No widget %s]"
-msgstr ""
+msgstr "[Žádný widget %s]"
 
 #. module: web
 #. odoo-javascript
@@ -6155,6 +6290,13 @@ msgstr "vše"
 #, python-format
 msgid "all records"
 msgstr "všechny záznamy"
+
+#. module: web
+#. odoo-javascript
+#: code:addons/web/static/src/core/commands/command_items.xml:0
+#, python-format
+msgid "and"
+msgstr "and"
 
 #. module: web
 #. odoo-javascript
@@ -6261,7 +6403,7 @@ msgstr "např. Globální obchodní řešení"
 #: code:addons/web/static/src/legacy/xml/base.xml:0
 #, python-format
 msgid "for:"
-msgstr ""
+msgstr "pro:"
 
 #. module: web
 #. odoo-javascript
@@ -6377,7 +6519,7 @@ msgstr "je před"
 #: code:addons/web/static/src/search/filter_menu/custom_filter_item.js:0
 #, python-format
 msgid "is before or equal to"
-msgstr ""
+msgstr "je před nebo rovno"
 
 #. module: web
 #. odoo-javascript
@@ -6484,12 +6626,12 @@ msgstr "je nastaveno"
 #: code:addons/web/static/src/core/ui/block_ui.js:0
 #, python-format
 msgid "it's still loading..."
-msgstr ""
+msgstr "stále se to načítá..."
 
 #. module: web
 #. odoo-javascript
+#: code:addons/web/static/src/core/utils/numbers.js:0
 #: code:addons/web/static/src/legacy/js/core/utils.js:0
-#: code:addons/web/static/src/views/fields/formatters.js:0
 #, python-format
 msgid "kMGTPE"
 msgstr "kMGTPE"
@@ -6531,7 +6673,7 @@ msgstr "jako"
 #: code:addons/web/static/src/webclient/menus/menu_providers.js:0
 #, python-format
 msgid "menus"
-msgstr ""
+msgstr "nabídky"
 
 #. module: web
 #. odoo-javascript
@@ -6568,7 +6710,7 @@ msgstr "ms"
 #: code:addons/web/static/src/core/commands/command_palette.xml:0
 #, python-format
 msgid "new tab"
-msgstr ""
+msgstr "nová záložka"
 
 #. module: web
 #. odoo-javascript
@@ -6682,7 +6824,7 @@ msgstr "záznam(y)"
 #: code:addons/web/static/src/views/list/list_confirmation_dialog.xml:0
 #, python-format
 msgid "records ?"
-msgstr ""
+msgstr "záznamy ?"
 
 #. module: web
 #. odoo-javascript
@@ -6717,7 +6859,7 @@ msgstr "vybráno"
 #: code:addons/web/static/src/views/list/list_confirmation_dialog.xml:0
 #, python-format
 msgid "selected records,"
-msgstr ""
+msgstr "vybrané záznamy,"
 
 #. module: web
 #. odoo-javascript
@@ -6754,4 +6896,11 @@ msgstr ""
 #: code:addons/web/static/src/webclient/user_menu/user_menu_items.xml:0
 #, python-format
 msgid "— press"
+msgstr ""
+
+#. module: web
+#. odoo-javascript
+#: code:addons/web/static/src/core/commands/command_items.xml:0
+#, python-format
+msgid "— search for"
 msgstr ""

@@ -50,6 +50,10 @@
         display: block;
     }
 
+    .availability_messages {
+        display: none;
+    }
+
     .js_add,
     .oe_price,
     .oe_default_price,
@@ -185,6 +189,7 @@ label.css_attribute_color.css_not_available {
             -webkit-appearance: none;
             appearance: none;
             opacity: 0;
+            position: absolute !important;
         }
     }
 

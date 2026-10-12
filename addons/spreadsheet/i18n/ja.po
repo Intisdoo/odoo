@@ -9,15 +9,16 @@
 # Martin Trigaux, 2022
 # Noma Yuki, 2022
 # Andy Yiu, 2023
-# Junko Augias, 2023
+# Wil Odoo, 2024
+# Junko Augias, 2025
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0+e\n"
+"Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-15 12:44+0000\n"
+"POT-Creation-Date: 2025-05-08 20:35+0000\n"
 "PO-Revision-Date: 2022-09-22 05:55+0000\n"
-"Last-Translator: Junko Augias, 2023\n"
+"Last-Translator: Junko Augias, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/odoo/teams/41243/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -117,21 +118,6 @@ msgstr "+ 規則を1つ追加"
 #, python-format
 msgid "- [optional]"
 msgstr "- [任意]"
-
-#. module: spreadsheet
-#. odoo-javascript
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#, python-format
-msgid ""
-"/** Font Awesome by Dave Gandy\n"
-" *  http://fontawesome.io/\n"
-" *  https://fontawesome.com/license\n"
-" */"
-msgstr ""
-"/** Font Awesome by Dave Gandy\n"
-" *  http://fontawesome.io/\n"
-" *  https://fontawesome.com/license\n"
-" */"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -393,6 +379,7 @@ msgstr "範囲に適用"
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/assets_backend/constants.js:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "April"
 msgstr "4月"
@@ -422,6 +409,7 @@ msgstr "昇順 (A ⟶ Z)"
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/assets_backend/constants.js:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "August"
 msgstr "8月"
@@ -1011,6 +999,13 @@ msgstr "フィルタを作成"
 
 #. module: spreadsheet
 #. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "Cumulative data"
+msgstr "累計データ"
+
+#. module: spreadsheet
+#. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Cumulative interest paid over a set of periods."
@@ -1219,6 +1214,7 @@ msgstr "決済日を含むクーポン期間の日数"
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/assets_backend/constants.js:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "December"
 msgstr "12月"
@@ -1394,7 +1390,7 @@ msgstr "複製"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Duration"
-msgstr "経過時間"
+msgstr "所要時間"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1406,6 +1402,7 @@ msgstr "編集"
 
 #. module: spreadsheet
 #. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Edit link"
@@ -1469,6 +1466,7 @@ msgstr "2つの日付の間の正確な年数"
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/assets_backend/constants.js:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "February"
 msgstr "2月"
@@ -1632,6 +1630,13 @@ msgstr "計算式"
 #, python-format
 msgid "Freeze"
 msgstr "固定"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
+#, python-format
+msgid "Friday"
+msgstr "金曜"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1882,7 +1887,7 @@ msgstr "水平アライン"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Horizontal lookup"
-msgstr "水平検索"
+msgstr "Horizontal lookup"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1968,6 +1973,13 @@ msgstr "有効な一致が見つからない場合は、この値を返して下
 #, python-format
 msgid "Increase decimal places"
 msgstr "小数点以下の桁数を増やす"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
+#, python-format
+msgid "Index out of range."
+msgstr "インデックスが範囲外です。"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2276,7 +2288,7 @@ msgstr "間か"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Is empty"
-msgstr "空か"
+msgstr "空である"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2311,7 +2323,7 @@ msgstr "次の数値を下回る:"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Is less than or equal to"
-msgstr "次の数値を下回る、又はそれに等しい:"
+msgstr "次以下:"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2346,6 +2358,7 @@ msgstr "斜体"
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/assets_backend/constants.js:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "January"
 msgstr "1月"
@@ -2353,6 +2366,7 @@ msgstr "1月"
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/assets_backend/constants.js:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "July"
 msgstr "7月"
@@ -2360,6 +2374,7 @@ msgstr "7月"
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/assets_backend/constants.js:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "June"
 msgstr "6月"
@@ -2550,6 +2565,7 @@ msgstr "下部変曲点は上部変曲点より小さい必要がります。"
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/assets_backend/constants.js:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "March"
 msgstr "3月"
@@ -2606,6 +2622,7 @@ msgstr "数値データセット内の最大値。"
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/assets_backend/constants.js:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "May"
 msgstr "5月"
@@ -2739,6 +2756,13 @@ msgstr "修正済内部収益率"
 #, python-format
 msgid "Modulo (remainder) operator."
 msgstr "モジュロ（剰余）演算子。"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
+#, python-format
+msgid "Monday"
+msgstr "月曜"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2892,6 +2916,7 @@ msgstr "条件付き書式: %sの種類に演算子 %sが実装されていま�
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/assets_backend/constants.js:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "November"
 msgstr "11月"
@@ -3001,6 +3026,7 @@ msgstr "データセット内の数値の平均値。"
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/assets_backend/constants.js:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "October"
 msgstr "10月"
@@ -3338,6 +3364,13 @@ msgstr "提供する論理値の反対を返します。"
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
+msgid "Returns the content of a cell, specified by row and column offset."
+msgstr "行と列のオフセットで指定されたセルの内容を返します。"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
+#, python-format
 msgid "Returns the error value #N/A."
 msgstr "エラー値 #N/A を返します。"
 
@@ -3378,7 +3411,7 @@ msgstr "戻り値は、論理式に応じた値。"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Reverse icons"
-msgstr "リバースアイコン"
+msgstr "アイコンを反転"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3458,6 +3491,13 @@ msgstr "下の行"
 #, python-format
 msgid "Row number of a specified cell."
 msgstr "指定したセルの行番号。"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
+#, python-format
+msgid "Saturday"
+msgstr "土曜"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3554,6 +3594,7 @@ msgstr "期間を選択"
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/assets_backend/constants.js:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "September"
 msgstr "9月"
@@ -3678,7 +3719,7 @@ msgstr "降順で並べ替え (Z ⟶ A)"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Sort range"
-msgstr "範囲を並べ替え"
+msgstr "範囲をソート"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3798,6 +3839,13 @@ msgstr "複数の基準に応じた範囲を合計します。"
 
 #. module: spreadsheet
 #. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
+#, python-format
+msgid "Sunday"
+msgstr "日曜"
+
+#. module: spreadsheet
+#. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Symbol"
@@ -3858,6 +3906,20 @@ msgstr "引数がありません。値を指定して下さい。"
 #, python-format
 msgid "The base (%s) must be between 2 and 36 inclusive."
 msgstr "基数(%s)は2以上36以下でなければならない。"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
+#, python-format
+msgid "The base (%s) must be strictly positive."
+msgstr "基数 (%s) は必ず正の値にして下さい。"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
+#, python-format
+msgid "The base must be different from 1."
+msgstr "基数は1以外にして下さい。"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4284,6 +4346,13 @@ msgstr "life (%s) は必ず正の値である必要があります。"
 #, python-format
 msgid "The logarithm of a number, base e (euler's number)."
 msgstr "数値の対数、底e（オイラー数）。"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
+#, python-format
+msgid "The logarithm of a number, for a given base."
+msgstr "指定された基数に対する数の対数。"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4967,6 +5036,7 @@ msgstr "値 (%s) は正の値またはNULLである必要があります。"
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value (%s) must be strictly positive."
 msgstr "値 (%s)は必ず正の値にして下さい。"
@@ -5151,6 +5221,15 @@ msgstr "この式は、100を超える部分があります。これは、複数
 
 #. module: spreadsheet
 #. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
+#, python-format
+msgid ""
+"This function can only return a single cell value, not an array. Provide "
+"valid row and column indices."
+msgstr ""
+
+#. module: spreadsheet
+#. odoo-javascript
 #: code:addons/spreadsheet/static/src/currency/formulas.js:0
 #, python-format
 msgid ""
@@ -5181,6 +5260,13 @@ msgstr "この操作はマージのためできません。マージを削除し
 #, python-format
 msgid "Thresholds"
 msgstr "しきい値"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
+#, python-format
+msgid "Thursday"
+msgstr "木曜"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5229,6 +5315,13 @@ msgstr "ラベルをテキストとして扱います"
 #, python-format
 msgid "Truncates a number."
 msgstr "数を切り捨てます。"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
+#, python-format
+msgid "Tuesday"
+msgstr "火曜"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5449,14 +5542,14 @@ msgstr "縦軸の位置"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Vertical lookup."
-msgstr "垂直検索。"
+msgstr "Vertical lookup."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "View"
-msgstr "ビュー"
+msgstr "照会"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5466,6 +5559,13 @@ msgid ""
 "We found data next to your selection. Since this data was not selected, it "
 "will not be sorted. Do you want to extend your selection?"
 msgstr "選択範囲の隣にデータがあります。このデータが選択されていないので並べ替えはされません。選択範囲を広げますか？"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
+#, python-format
+msgid "Wednesday"
+msgstr "水曜"
 
 #. module: spreadsheet
 #. odoo-javascript

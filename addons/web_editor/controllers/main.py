@@ -46,6 +46,9 @@ def handle_history_divergence(record, html_field_name, vals):
     # Do not handle history divergence if the field is not in the values.
     if html_field_name not in vals:
         return
+    # Do not handle history divergence if in module installation mode.
+    if record.env.context.get('install_module'):
+        return
     incoming_html = vals[html_field_name]
     incoming_history_matches = re.search(diverging_history_regex, incoming_html or '')
     # When there is no incoming history id, it means that the value does not
@@ -135,6 +138,17 @@ class Web_Editor(http.Controller):
 
             :returns PNG image converted from given font
         """
+        # For custom icons, use the corresponding custom font
+        if icon.isdigit():
+            if int(icon) == 57467:
+                font = "/web/static/fonts/tiktok_only.woff"
+            elif int(icon) == 61593:  # F099
+                icon = "59392"  # E800
+                font = "/web/static/fonts/twitter_x_only.woff"
+            elif int(icon) == 61569:  # F081
+                icon = "59395"  # E803
+                font = "/web/static/fonts/twitter_x_only.woff"
+
         size = max(width, height, 1) if width else size
         width = width or size
         height = height or size
@@ -165,9 +179,17 @@ class Web_Editor(http.Controller):
         image = Image.new("RGBA", (width, height), color)
         draw = ImageDraw.Draw(image)
 
-        boxw, boxh = draw.textsize(icon, font=font_obj)
+        if hasattr(draw, 'textbbox'):
+            box = draw.textbbox((0, 0), icon, font=font_obj)
+            left = box[0]
+            top = box[1]
+            boxw = box[2] - box[0]
+            boxh = box[3] - box[1]
+        else:  # pillow < 8.00 (Focal)
+            left, top, _right, _bottom = image.getbbox()
+            boxw, boxh = draw.textsize(icon, font=font_obj)
+
         draw.text((0, 0), icon, font=font_obj)
-        left, top, right, bottom = image.getbbox()
 
         # Create an alpha mask
         imagemask = Image.new("L", (boxw, boxh), 0)
@@ -206,7 +228,7 @@ class Web_Editor(http.Controller):
     @http.route('/web_editor/checklist', type='json', auth='user')
     def update_checklist(self, res_model, res_id, filename, checklistId, checked, **kwargs):
         record = request.env[res_model].browse(res_id)
-        value = filename in record._fields and record[filename]
+        value = filename in record._fields and record.read([filename])[0][filename]
         htmlelem = etree.fromstring("<div>%s</div>" % value, etree.HTMLParser())
         checked = bool(checked)
 
@@ -236,7 +258,7 @@ class Web_Editor(http.Controller):
     @http.route('/web_editor/stars', type='json', auth='user')
     def update_stars(self, res_model, res_id, filename, starsId, rating):
         record = request.env[res_model].browse(res_id)
-        value = filename in record._fields and record[filename]
+        value = filename in record._fields and record.read([filename])[0][filename]
         htmlelem = etree.fromstring("<div>%s</div>" % value, etree.HTMLParser())
 
         stars_widget = htmlelem.find(".//span[@id='checkId-%s']" % starsId)
@@ -271,13 +293,14 @@ class Web_Editor(http.Controller):
     def video_url_data(self, video_url, autoplay=False, loop=False,
                        hide_controls=False, hide_fullscreen=False, hide_yt_logo=False,
                        hide_dm_logo=False, hide_dm_share=False):
+        # TODO: In Master, remove the parameter "hide_yt_logo" (the parameter is
+        # no longer supported in the YouTube API.)
         if not request.env.user._is_internal():
             raise werkzeug.exceptions.Forbidden()
         return get_video_url_data(
             video_url, autoplay=autoplay, loop=loop,
             hide_controls=hide_controls, hide_fullscreen=hide_fullscreen,
-            hide_yt_logo=hide_yt_logo, hide_dm_logo=hide_dm_logo,
-            hide_dm_share=hide_dm_share
+            hide_dm_logo=hide_dm_logo, hide_dm_share=hide_dm_share
         )
 
     @http.route('/web_editor/attachment/add_data', type='json', auth='user', methods=['POST'], website=True)
@@ -286,15 +309,13 @@ class Web_Editor(http.Controller):
         if is_image:
             format_error_msg = _("Uploaded image's format is not supported. Try with: %s", ', '.join(SUPPORTED_IMAGE_EXTENSIONS))
             try:
-                data = tools.image_process(data, size=(width, height), quality=quality, verify_resolution=True)
                 mimetype = guess_mimetype(data)
                 if mimetype not in SUPPORTED_IMAGE_MIMETYPES:
                     return {'error': format_error_msg}
-            except UserError:
-                # considered as an image by the browser file input, but not
-                # recognized as such by PIL, eg .webp
-                return {'error': format_error_msg}
-            except ValueError as e:
+                data = tools.image_process(data, size=(width, height), quality=quality, verify_resolution=True)
+            except (ValueError, UserError) as e:
+                # When UserError thrown, browser considers file input an
+                # image but not recognized as such by PIL, eg .webp
                 return {'error': e.args[0]}
 
         self._clean_context()
@@ -490,7 +511,7 @@ class Web_Editor(http.Controller):
 
         # Compile regex outside of the loop
         # This will used to exclude library scss files from the result
-        excluded_url_matcher = re.compile("^(.+/lib/.+)|(.+import_bootstrap.+\.scss)$")
+        excluded_url_matcher = re.compile(r"^(.+/lib/.+)|(.+import_bootstrap.+\.scss)$")
 
         # First check the t-call-assets used in the related views
         url_infos = dict()
@@ -619,6 +640,17 @@ class Web_Editor(http.Controller):
         return '%s?access_token=%s' % (attachment.image_src, attachment.access_token)
 
     def _get_shape_svg(self, module, *segments):
+        Module = request.env['ir.module.module'].sudo()
+        # Avoid creating a bridge module just for this check.
+        if 'imported' in Module._fields and Module.search([('name', '=', module)]).imported:
+            attachment = request.env['ir.attachment'].sudo().search([
+                ('url', '=', f"/{module.replace('.', '_')}/static/{'/'.join(segments)}"),
+                ('public', '=', True),
+                ('type', '=', 'binary'),
+            ], limit=1)
+            if attachment:
+                return b64decode(attachment.datas)
+            raise werkzeug.exceptions.NotFound()
         shape_path = get_resource_path(module, 'static', *segments)
         if not shape_path:
             raise werkzeug.exceptions.NotFound()
@@ -721,6 +753,15 @@ class Web_Editor(http.Controller):
         img = binary_to_image(image)
         width, height = tuple(str(size) for size in img.size)
         root = etree.fromstring(svg)
+
+        if root.attrib.get("data-forced-size"):
+            # Adjusts the SVG height to ensure the image fits properly within
+            # the SVG (e.g. for "devices" shapes).
+            svgHeight = float(root.attrib.get("height"))
+            svgWidth = float(root.attrib.get("width"))
+            svgAspectRatio = svgWidth / svgHeight
+            height = str(float(width) / svgAspectRatio)
+
         root.attrib.update({'width': width, 'height': height})
         # Update default color palette on shape SVG.
         svg, _ = self._update_svg_colors(kwargs, etree.tostring(root, pretty_print=True).decode('utf-8'))
@@ -773,17 +814,21 @@ class Web_Editor(http.Controller):
         for id, url in response.json().items():
             req = requests.get(url)
             name = '_'.join([media[id]['query'], url.split('/')[-1]])
-            # Need to bypass security check to write image with mimetype image/svg+xml
-            # ok because svgs come from whitelisted origin
-            context = {'binary_field_real_user': request.env['res.users'].sudo().browse([SUPERUSER_ID])}
-            attachment = request.env['ir.attachment'].sudo().with_context(context).create({
+            IrAttachment = request.env['ir.attachment']
+            attachment_data = {
                 'name': name,
                 'mimetype': req.headers['content-type'],
                 'datas': b64encode(req.content),
                 'public': True,
                 'res_model': 'ir.ui.view',
                 'res_id': 0,
-            })
+            }
+            attachment = get_existing_attachment(IrAttachment, attachment_data)
+            # Need to bypass security check to write image with mimetype image/svg+xml
+            # ok because svgs come from whitelisted origin
+            if not attachment:
+                context = {'binary_field_real_user': request.env['res.users'].sudo().browse([SUPERUSER_ID])}
+                attachment = IrAttachment.sudo().with_context(context).create(attachment_data)
             if media[id]['is_dynamic_svg']:
                 colorParams = werkzeug.urls.url_encode(media[id]['dynamic_colors'])
                 attachment['url'] = '/web_editor/shape/illustration/%s?%s' % (slug(attachment), colorParams)

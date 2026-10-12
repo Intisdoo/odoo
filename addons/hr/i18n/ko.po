@@ -6,16 +6,17 @@
 # Linkup <link-up@naver.com>, 2022
 # JH CHOI <hwangtog@gmail.com>, 2022
 # Martin Trigaux, 2023
-# Sarah Park, 2023
 # Daye Jeong, 2023
+# Wil Odoo, 2025
+# Sarah Park, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-23 08:22+0000\n"
+"POT-Creation-Date: 2025-02-10 08:26+0000\n"
 "PO-Revision-Date: 2022-09-22 05:46+0000\n"
-"Last-Translator: Daye Jeong, 2023\n"
+"Last-Translator: Sarah Park, 2025\n"
 "Language-Team: Korean (https://app.transifex.com/odoo/teams/41243/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -84,7 +85,7 @@ msgstr "1 전화 면접"
 #: model_terms:hr.job,website_description:hr.job_marketing
 #: model_terms:hr.job,website_description:hr.job_trainee
 msgid "12 days / year, including <br>6 of your choice."
-msgstr "연간 12일,  원하는 날짜 <br>6 포함."
+msgstr "원하는 날짜 6일을 포함하여 <br>연간 총 12일의 교육을 제공합니다. "
 
 #. module: hr
 #: model_terms:hr.job,job_details:hr.job_ceo
@@ -359,7 +360,7 @@ msgstr "<span>신규 입사자</span>"
 #: model_terms:hr.job,website_description:hr.job_marketing
 #: model_terms:hr.job,website_description:hr.job_trainee
 msgid "A full-time position <br>Attractive salary package."
-msgstr "정규직 직책 <br>높은 연봉 수준."
+msgstr "정규직 직책과 <br>높은 연봉 수준을 제공합니다."
 
 #. module: hr
 #: model:ir.model.constraint,message:hr.constraint_hr_employee_user_uniq
@@ -490,7 +491,7 @@ msgstr "추가 메모"
 #: model_terms:hr.job,website_description:hr.job_marketing
 #: model_terms:hr.job,website_description:hr.job_trainee
 msgid "Additional languages"
-msgstr "기타 언어"
+msgstr "제2외국어 가능"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__address_home_id
@@ -507,7 +508,7 @@ msgstr "주소"
 #: model_terms:hr.job,website_description:hr.job_marketing
 #: model_terms:hr.job,website_description:hr.job_trainee
 msgid "Administrative Work"
-msgstr "행정 업무"
+msgstr "행정 업무 능력"
 
 #. module: hr
 #: model:res.groups,name:hr.group_hr_manager
@@ -599,7 +600,7 @@ msgid ""
 "                                We expect the candidate to be proactive and have a \"get it done\" spirit. To be successful,\n"
 "                                you will have solid solving problem skills."
 msgstr ""
-"회사의 직원으로서 여러분은 <b>각 부서와 협력하여 혁신적인 제품을 만들고\n"
+"회사의 일원으로서 여러분은 <b>각 부서와 협력하여 혁신적인 제품을 만들고\n"
 "                                배포하게 됩니다.</b> 뛰어난 역량의 리더들과 함께 배우고 성장할 기회는 물론,\n"
 "                                다양한 복지를 제공하는 회사에서 함께 일해보세요. 풍부한 경험과 잠재력을 지닌 인재를 모십니다.\n"
 "                                <br><br>\n"
@@ -716,6 +717,11 @@ msgstr "배지 ID"
 #: model:ir.model.fields,field_description:hr.field_hr_employee__bank_account_id
 msgid "Bank Account Number"
 msgstr "은행 계좌 번호"
+
+#. module: hr
+#: model:ir.model,name:hr.model_res_partner_bank
+msgid "Bank Accounts"
+msgstr "은행 계좌"
 
 #. module: hr
 #: model:ir.model,name:hr.model_base
@@ -972,12 +978,12 @@ msgstr "새 부서 만들기"
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.hr_contract_type_action
 msgid "Create a new employment type"
-msgstr ""
+msgstr "새로운 고용 유형 만들기"
 
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.hr_work_location_action
 msgid "Create a new work location"
-msgstr ""
+msgstr "새로운 작업장 만들기"
 
 #. module: hr
 #: model_terms:hr.job,website_description:hr.job_ceo
@@ -988,7 +994,7 @@ msgstr ""
 #: model_terms:hr.job,website_description:hr.job_marketing
 #: model_terms:hr.job,website_description:hr.job_trainee
 msgid "Create content that will help our users on a daily basis"
-msgstr "사용자에게 일상적으로 도움이 되는 콘텐츠 제작"
+msgstr "사용자에게 실질적으로 도움이 되는 콘텐츠를 제작합니다."
 
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.res_users_view_form
@@ -1217,7 +1223,7 @@ msgstr ""
 #: model_terms:hr.job,website_description:hr.job_marketing
 #: model_terms:hr.job,website_description:hr.job_trainee
 msgid "Eat &amp; Drink"
-msgstr "먹기 &amp; 마시기"
+msgstr "간식 제공"
 
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.res_users_view_form_profile
@@ -1425,7 +1431,7 @@ msgstr "회사에 연결된 주소가 아닌 직원의 개인 주소를 여기�
 #: model_terms:hr.job,website_description:hr.job_marketing
 #: model_terms:hr.job,website_description:hr.job_trainee
 msgid "Expand your knowledge of various business industries"
-msgstr "다양한 비즈니스 산업에 대한 지식을 넓혀보세요"
+msgstr "다양한 비즈니스 산업에 대한 지식을 넓힐 수 있습니다."
 
 #. module: hr
 #: model:ir.model.fields,help:hr.field_hr_job__expected_employees
@@ -1557,7 +1563,7 @@ msgstr "졸업"
 #: model_terms:hr.job,website_description:hr.job_marketing
 #: model_terms:hr.job,website_description:hr.job_trainee
 msgid "Great team of smart people, in a friendly and open culture"
-msgstr "친절함과 개방적 조직 문화를 갖춘 뛰어난 인재들로 구성된 팀"
+msgstr "친절하고 개방적인 문화 속에서 스마트한 인재들로 구성된 팀입니다."
 
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.hr_employee_public_view_search
@@ -1915,7 +1921,7 @@ msgstr "출시 계획"
 #: model_terms:hr.job,website_description:hr.job_marketing
 #: model_terms:hr.job,website_description:hr.job_trainee
 msgid "Lead the entire sales cycle"
-msgstr "전체 판매 주기 리드"
+msgstr "전체 영업 주기 리드"
 
 #. module: hr
 #: model:ir.model.fields.selection,name:hr.selection__hr_employee__marital__cohabitant
@@ -2048,7 +2054,7 @@ msgstr "메시지"
 #: model_terms:hr.job,website_description:hr.job_marketing
 #: model_terms:hr.job,website_description:hr.job_trainee
 msgid "Must Have"
-msgstr "당연 사항"
+msgstr "지원 자격"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__my_activity_date_deadline
@@ -2127,7 +2133,7 @@ msgstr "다음 활동 유형"
 #: model_terms:hr.job,website_description:hr.job_marketing
 #: model_terms:hr.job,website_description:hr.job_trainee
 msgid "Nice to have"
-msgstr "반갑습니다"
+msgstr "우대 사항"
 
 #. module: hr
 #: model_terms:hr.job,website_description:hr.job_ceo
@@ -2138,7 +2144,7 @@ msgstr "반갑습니다"
 #: model_terms:hr.job,website_description:hr.job_marketing
 #: model_terms:hr.job,website_description:hr.job_trainee
 msgid "No dumb managers, no stupid tools to use, no rigid working hours"
-msgstr "무능한 상사, 비효율적인 툴 사용, 경직된 근로 시간 제도가 없습니다."
+msgstr "무능한 관리자, 비효율적인 도구의 사용, 경직된 근로 시간 제도가 없습니다."
 
 #. module: hr
 #. odoo-python
@@ -2157,7 +2163,7 @@ msgstr "%s 활동에 대해 지정된 사용자가 없습니다."
 #: model_terms:hr.job,website_description:hr.job_trainee
 msgid ""
 "No waste of time in enterprise processes, real responsibilities and autonomy"
-msgstr "유료버전 프로세스에서 시간 낭비 없음, 실질적인 책임 및 자율성"
+msgstr "엔터프라이즈 프로세스를 사용하여 시간 낭비를 최소화하며, 각 직책에 맞는 실질적인 책임과 자율성을 부여합니다."
 
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.res_users_view_form_profile
@@ -2292,7 +2298,7 @@ msgstr "기타 담당자"
 #: model_terms:hr.job,website_description:hr.job_marketing
 #: model_terms:hr.job,website_description:hr.job_trainee
 msgid "Our Product"
-msgstr "품목"
+msgstr "제품"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__pin
@@ -2374,7 +2380,7 @@ msgstr "높은 수준의 영어 작문 능력"
 #: model_terms:hr.job,website_description:hr.job_marketing
 #: model_terms:hr.job,website_description:hr.job_trainee
 msgid "Perks"
-msgstr "비금전적 혜택"
+msgstr "기본 혜택"
 
 #. module: hr
 #: model:hr.contract.type,name:hr.contract_type_permanent
@@ -2390,7 +2396,7 @@ msgstr "정직원"
 #: model_terms:hr.job,website_description:hr.job_marketing
 #: model_terms:hr.job,website_description:hr.job_trainee
 msgid "Personal Evolution"
-msgstr "개인의 성장"
+msgstr "성장 가능성"
 
 #. module: hr
 #: model_terms:ir.ui.view,arch_db:hr.res_users_view_form_profile
@@ -2578,7 +2584,7 @@ msgstr "일반 직원"
 #: model_terms:hr.job,website_description:hr.job_marketing
 #: model_terms:hr.job,website_description:hr.job_trainee
 msgid "Qualify the customer needs"
-msgstr "고객 니즈 파악"
+msgstr "고객의 니즈 파악"
 
 #. module: hr
 #: model_terms:ir.actions.act_window,help:hr.action_hr_job
@@ -2594,7 +2600,7 @@ msgstr "더 효율적으로 채용할 준비가 되셨습니까?"
 #: model_terms:hr.job,website_description:hr.job_marketing
 #: model_terms:hr.job,website_description:hr.job_trainee
 msgid "Real responsibilities and challenges in a fast evolving company"
-msgstr "빠르게 발전하는 기업의 사회적 책임과 과제"
+msgstr "빠르게 발전하는 기업의 사회적 책임과 도전 과제를 제시합니다."
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_departure_reason__name
@@ -2616,15 +2622,11 @@ msgid "Register Departure"
 msgstr "퇴사 등록"
 
 #. module: hr
+#. odoo-python
+#: code:addons/hr/models/hr_employee_base.py:0
 #: model:ir.model.fields,field_description:hr.field_hr_employee__related_contact_ids
 #: model:ir.model.fields,field_description:hr.field_hr_employee_base__related_contact_ids
 #: model:ir.model.fields,field_description:hr.field_hr_employee_public__related_contact_ids
-msgid "Related Contact"
-msgstr "관련 연락처"
-
-#. module: hr
-#. odoo-python
-#: code:addons/hr/models/hr_employee_base.py:0
 #, python-format
 msgid "Related Contacts"
 msgstr "관련 연락처"
@@ -2700,7 +2702,7 @@ msgstr "자원"
 #: model_terms:hr.job,website_description:hr.job_marketing
 #: model_terms:hr.job,website_description:hr.job_trainee
 msgid "Responsibilities"
-msgstr "책임"
+msgstr "주요 업무"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_plan_activity_type__responsible
@@ -3200,13 +3202,13 @@ msgstr "유효한 IP 주소"
 #: model_terms:hr.job,website_description:hr.job_marketing
 #: model_terms:hr.job,website_description:hr.job_trainee
 msgid "Valid work permit for Belgium"
-msgstr "벨기에에서 유효한 취업 허가"
+msgstr "벨기에에서 유효한 취업 허가 소지"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__visa_expire
 #: model:ir.model.fields,field_description:hr.field_res_users__visa_expire
 msgid "Visa Expiration Date"
-msgstr ""
+msgstr "비자 만료일"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__visa_no
@@ -3220,7 +3222,7 @@ msgstr "비자 번호"
 #: model:ir.model.fields,field_description:hr.field_hr_plan_wizard__warning
 #, python-format
 msgid "Warning"
-msgstr "경고"
+msgstr "주의"
 
 #. module: hr
 #: model_terms:hr.job,website_description:hr.job_ceo
@@ -3231,7 +3233,7 @@ msgstr "경고"
 #: model_terms:hr.job,website_description:hr.job_marketing
 #: model_terms:hr.job,website_description:hr.job_trainee
 msgid "What We Offer"
-msgstr "제공하는 서비스"
+msgstr "다양한 혜택"
 
 #. module: hr
 #: model_terms:hr.job,website_description:hr.job_ceo
@@ -3242,7 +3244,7 @@ msgstr "제공하는 서비스"
 #: model_terms:hr.job,website_description:hr.job_marketing
 #: model_terms:hr.job,website_description:hr.job_trainee
 msgid "What's great in the job?"
-msgstr "직장에서 무엇이 좋습니까?"
+msgstr "해당 직책의 장점은 무엇입니까?"
 
 #. module: hr
 #: model:ir.model.fields,help:hr.field_hr_employee__member_of_department
@@ -3459,3 +3461,8 @@ msgstr "계획"
 #, python-format
 msgid "restricted to employees"
 msgstr "직원으로 제한"
+
+#. module: hr
+#: model:ir.model.fields,field_description:hr.field_hr_employee__work_permit_name
+msgid "work_permit_name"
+msgstr "work_permit_name"

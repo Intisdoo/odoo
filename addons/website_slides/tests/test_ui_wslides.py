@@ -1,15 +1,18 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 import base64
+import logging
 
 from dateutil.relativedelta import relativedelta
 
-from odoo import tests
+from odoo import http, tests
 from odoo.addons.base.tests.common import HttpCaseWithUserPortal
 from odoo.addons.gamification.tests.common import HttpCaseGamification
-from odoo.fields import Datetime
+from odoo.fields import Command, Datetime
 from odoo.modules.module import get_module_resource
+from odoo.tools.misc import file_open
 
+_logger = logging.getLogger(__name__)
 
 class TestUICommon(HttpCaseGamification, HttpCaseWithUserPortal):
 
@@ -185,8 +188,16 @@ class TestUi(TestUICommon):
             login=user_demo.login)
 
 
-@tests.common.tagged('post_install', '-at_install')
+@tests.common.tagged('post_install', '-at_install', '-standard', 'breaking_16', 'no_network')
 class TestUiPublisher(HttpCaseGamification):
+
+    def fetch_proxy(self, url):
+        if url.endswith('ThreeTimeAKCGoldWinnerPembrookeWelshCorgi.jpg'):
+            _logger.info('External chrome request during tests: Sending dummy image for %s', url)
+            with file_open('base/tests/odoo.jpg', 'rb') as f:
+                content = f.read()
+            return self.make_fetch_proxy_response(content)
+        return super().fetch_proxy(url)
 
     def test_course_publisher_elearning_manager(self):
         user_demo = self.user_demo
@@ -197,6 +208,11 @@ class TestUiPublisher(HttpCaseGamification):
                 (4, self.env.ref('website_slides.group_website_slides_manager').id)
             ],
         })
+        self.env['slide.channel.tag.group'].create([{
+            'name': 'Your Favorite Role',
+            'tag_ids': [Command.create({'name': 'Gardening'})]}
+        ])
+        self.env['slide.tag'].create({'name': 'Practice'})
 
         self.browser_js(
             self.env['website'].get_client_action_url('/slides'),
@@ -233,3 +249,17 @@ class TestUiPublisherYoutube(HttpCaseGamification):
             'odoo.__DEBUG__.services["web_tour.tour"].run("course_publisher")',
             'odoo.__DEBUG__.services["web_tour.tour"].tours.course_publisher.ready',
             login=user_demo.login)
+
+@tests.common.tagged('external', 'post_install', '-standard', '-at_install')
+class TestPortalComposer(TestUICommon):
+    def test_portal_composer_attachment(self):
+        """Check that the access token is returned when we upload an attachment."""
+        self.authenticate('demo', 'demo')
+        response = self.url_open('/portal/attachment/add', data={
+            'name': 'image.png',
+            'res_id': self.channel.id,
+            'res_model': 'slide.channel',
+            'csrf_token': http.WebRequest.csrf_token(self),
+        }, files={'file': ('image.png', '', 'image/png')})
+        self.assertTrue(response.ok)
+        self.assertTrue(response.json().get('access_token'))

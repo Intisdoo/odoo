@@ -45,6 +45,7 @@ class TestServerActionsBase(TransactionCaseWithUserDemo):
         self.res_partner_parent_field = Fields.search([('model', '=', 'res.partner'), ('name', '=', 'parent_id')])
         self.res_partner_children_field = Fields.search([('model', '=', 'res.partner'), ('name', '=', 'child_ids')])
         self.res_partner_category_field = Fields.search([('model', '=', 'res.partner'), ('name', '=', 'category_id')])
+        self.res_partner_latitude_field = Fields.search([('model', '=', 'res.partner'), ('name', '=', 'partner_latitude')])
         self.res_country_model = Model.search([('model', '=', 'res.country')])
         self.res_country_name_field = Fields.search([('model', '=', 'res.country'), ('name', '=', 'name')])
         self.res_country_code_field = Fields.search([('model', '=', 'res.country'), ('name', '=', 'code')])
@@ -174,6 +175,22 @@ class TestServerActions(TestServerActionsBase):
         partner = self.test_partner.search([('name', 'ilike', _name)])
         self.assertEqual(len(partner), 1, 'ir_actions_server: TODO')
         self.assertEqual(partner.city, 'OrigCity', 'ir_actions_server: TODO')
+
+    def test_object_write_equation(self):
+        # Do: update partners city
+        self.action.write({
+            'state': 'object_write',
+            'fields_lines': [Command.create({
+                'col1': self.res_partner_city_field.id,
+                'evaluation_type': 'equation',
+                'value': 'record.id',
+            })],
+        })
+        partners = self.test_partner + self.test_partner.copy()
+        self.action.with_context(self.context, active_ids=partners.ids).run()
+        # Test: partners updated
+        self.assertEqual(partners[0].city, str(partners[0].id))
+        self.assertEqual(partners[1].city, str(partners[1].id))
 
     @mute_logger('odoo.addons.base.models.ir_model', 'odoo.models')
     def test_40_multi(self):
@@ -315,6 +332,15 @@ class TestServerActions(TestServerActionsBase):
         # nor execute a server action on it
         with self.assertRaises(AccessError), mute_logger('odoo.addons.base.models.ir_actions'):
             self_demo.with_context(self.context).run()
+
+    def test_90_convert_to_float(self):
+        # make sure eval_value convert the value into float for float-type fields
+        self.action.write({
+            'state': 'object_write',
+            'fields_lines': [Command.create({'col1': self.res_partner_latitude_field.id, 'value': '20.99'})],
+        })
+        line = self.action.fields_lines[0]
+        self.assertEqual(line.eval_value()[line.id], 20.99)
 
 
 class TestCustomFields(common.TransactionCase):
